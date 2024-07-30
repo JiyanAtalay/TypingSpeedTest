@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Urls {
+    static func wordsByNumber(number: Int) -> URL{
+        return URL(string: "https://random-word-api.herokuapp.com/word?number=\(number)")!
+    }
+}
